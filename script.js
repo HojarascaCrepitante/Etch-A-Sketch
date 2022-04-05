@@ -1,6 +1,7 @@
 const container = document.getElementById('container')
 const button = document.createElement('button')
 button.addEventListener('click', clearGrid)
+button.textContent = 'Clear Grid';
 container.appendChild(button)
 const rowAndColumns = document.createElement('div');
 rowAndColumns.classList.add('rowAndColumns');
@@ -21,6 +22,6 @@ container.appendChild(rowAndColumns)
     function clearGrid(){
         let everyDivInsideGrid = document.querySelectorAll('.active')
         for(let n = 0; n < everyDivInsideGrid.length; n++){
-            everyDivInsideGrid.classList.remove('active')
+            everyDivInsideGrid[n].classList.remove('active')
         }
     }
