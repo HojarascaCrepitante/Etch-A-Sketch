@@ -1,20 +1,56 @@
+
 .rowAndColumns{
     display:grid;
-    grid-template-columns: repeat(16,40px);
-    grid-template-rows: repeat(16,40px);
-    width: auto;
-    justify-content: center;
-    align-content:center;
-    
-
-    
 }
 .rowAndColumnsDivs{
-    padding: 10px;
+    padding: 22px;
     border: 1px;
     border-style: solid;
     border-color: black;
 }
 .active{
     background-color: black;
+}
+#header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+   
+}
+button{
+    font-size: 20px;
+    margin: 10px;
+    width: fit-content;
+    border-radius: 25%;
+    background-color: rgb(129, 158, 184);
+    
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(207, 204, 204);
+    align-items: center;
+}
+#grid{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+}
+.rowAndColumnsDivs30x30{
+    padding: 11px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+.rowAndColumnsDivs40x40{
+    padding: 8px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+p{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex: 1;
 }
